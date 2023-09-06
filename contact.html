@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact | Tennessee</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+  
+
+    <script>
+      function compareEmail()
+      {
+      if(document.getElementById("emailAddress").value === document.getElementById("confirmemailAddress").value) {
+        alert("The email address match.")
+
+      } else {
+         document.getElementById("submit").setAttribute("disabled", "disabled");
+         alert("The email addresses do not match!")
+        }
+
+      }
+
+
+
+    </script>
+
+  </head>
+  
+
+
+
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="nashville.html">Nashville (Capital)</a></li>
+          <li><a href="knoxville.html">Knoxville</a></li>
+          <li><a href="johnson-city.html">Johnson City</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+      </nav>
+    </header>
+    <section class="main-heading">
+      <h1>Contact</h1>
+    </section>
+    <section id="contact">
+      <h2>Let's connect</h2>
+      <form name="contactus" action="#">
+        
+        <input type="text" id ="firstName" name="firstname" placeholder="First Name"><br>
+   
+        <input type="text" id ="lastName" name="lastname" placeholder="Last Name"><br>
+      
+        <input type="email" id ="emailAddress" name="emailaddress" placeholder="Email Address"><br>
+       
+        <input type="email" id ="confirmemailAddress" name="confirmemailaddress" placeholder="Confirm Email Address"><br>
+       
+        <input type="textbox" id ="message" name="usermessage" placeholder="Your Message"><br>
+        <input type="button" id="submit" value="Send Message" onClick="compareEmail()">
+
+
+      </form>
+    </section>
+    <section class="second-section">
+      <aside>Once you send your message, we will respond as soon as we can!</aside>
+
+    </section>
+  </body>
+</html>
